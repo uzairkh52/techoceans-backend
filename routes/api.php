@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/contact-form', [ContactController::class, "ContactClass"]);
+Route::get('/contact-data', [ContactController::class, "getContactClass"]);

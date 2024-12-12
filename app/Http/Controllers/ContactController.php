@@ -24,4 +24,10 @@ class ContactController extends Controller
             ];
         }
     }
+    function getContactClass() {
+        $data = Contact::all();
+        return response()->json([
+            "data"=> $data
+        ]);
+    }
 }
